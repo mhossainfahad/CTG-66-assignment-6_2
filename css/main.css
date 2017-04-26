@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+	padding: 0;
+    font-family: 'Play', sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-logo {
+    width: 20%;
+    float: left;
+}
+
+.main-logo img {
+    max-width: 100%;
+}
+
+nav {
+    width: 50%;
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2D2D2D;
+    padding: 15px 10px;
+    position: relative;
+    transition: all 0.4s ease;
+    z-index: 0;
+    
+}
+
+nav ul li a:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: #fff;
+    color: #2D2D2D;
+    z-index: -1;
+    transition: all 0.4s ease;
+
+}
+
+nav ul li a:hover:after{
+    background: #4CCE26; 
+    width: 100%; 
+      
+} 
+
+.social-icon {
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.social-icon ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social-icon ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+.social-icon ul li a:hover:after{
+    
+}
+
+.twit {
+    color: #2096CF;
+}
+
+.fbook {
+    color: #454C94;
+}
+
+.gplus {
+    color: #C33514;
+}
+
+.link {
+    color: #4F67B2;
+}
+
+.signin {
+    width: 15%;
+    float: left;
+}
+
+.signin a {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    padding: 16px 0 0px 11px;
+}
+
+.signin a i {
+    padding: 0 2px 0 0;
+}
+
+.bg-section {
+    overflow: hidden;
+    max-height: 60vh;
+    position: relative;
+}
+
+.bg-section img {
+    max-width: 100%;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    transform: translate(-25%,-45%);
+    background-color: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+}
+
+.content h1 {
+    max-width: 100%;
+    width: 90%;
+    margin: 0px 0 0 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
+    color: #2D2D2D;
+    padding: 0;
+}
+
+.content p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.button-lend {
+    background-color: #92DC64;
+    border: 1px solid #A2DA7F;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F2FBED;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-borrow {
+    background-color: #0A4B64;
+    border: 1px solid #4F6F7C;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F2FBED;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.service-section {
+    text-align: center;
+}
+
+.particular-service {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 80px 5px;  
+}
+
+.particular-service h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.particular-service p {
+    margin: 0;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+}
+
+.particular-service button {
+    color: #ffffff;
+    background-color: #129746;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #E0F0E4;
+    border-radius: 3px;
+
+}
+
+.message {
+    margin: 0;
+    padding: 0px 0;
+    position: fixed;
+    top: 90%;
+    right: 0;
+    transform: translateY(-90%);
+}
+
+.message a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-top-left-radius: 5px;
+    font-size: 14px;
+    
+}
+
+.message a:hover {
+    background-color: #0A4B64;
+}
+
+.message a:focus {
+    background-color: #0A4B64;
+}
+
+.scheme-section {
+    padding: 0 0 50px 0;
+}
+
+.left-content {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 20px 0 0;
+    text-align: center;
+}
+
+.left-content p {
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+.lender-block {
+    background-color: #B4C9D0;
+    padding: 0 0 30px 0;
+}
+
+.lender-block h3 {
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lender-block ol {
+    margin: 0;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.lender-block ol li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 10px 0;
+}
+
+.right-content {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 0 0 20px;
+    text-align: center;
+}
+
+.borrower-block {
+    background-color: #B0DEDE;
+    padding: 0 0 30px 0;
+}
+
+.borrower-block h3 {
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.borrower-block ol {
+    margin: 0;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.borrower-block ol li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 0 14px 0;
+}
+
+.blog-content {
+    padding: 0 0 50px 0;
+}
+
+.blog-content h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0A4B64;
+}
+
+.blog-left-content {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 20px 0 0;
+}
+
+.blog-left-content h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A4B64;
+}
+
+.blog-left-content p {
+    font-size: 15px;
+}
+
+.blog-left-content p a {
+    text-decoration: none;
+    color: #1B5573;
+    font-weight: bold;
+    padding: 0 0 0 90px;
+}
+
+.blog-right-content {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 0 0 20px;
+}
+
+.blog-right-content h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A4B64;
+}
+
+.blog-right-content p {
+    font-size: 15px;
+}
+
+.blog-right-content p a {
+    text-decoration: none;
+    color: #1B5573;
+    font-weight: bold;
+    padding: 0 0 0 40px;
+}
+
+.goal-section {
+    background-color: #EBEBEB;
+    padding: 40px 0;
+}
+
+.goals-achieved {
+    text-align: center;
+}
+
+.goals-achieved p {
+    font-size: 15px;
+}
+
+.goals-achieved p span {
+    font-size: 30px;
+}
+
+.rating {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.com {
+    background-color: #EBEBEB;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.com h2 {
+    font-weight: bold;
+}
+
+.com table tr td img {
+    max-width: 100%;
+}
+
+.collab {
+    background-color: #737373;
+    text-align: center;
+    padding: 50px 150px;
+}
+
+.collab h2 {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #04223A;
+    color: #ffffff;
+    padding: 20px 0
+}
+
+.footer-block table tr td:first-child {
+    text-align: right;
+    padding: 0 20px 0 0;
+}
+
+.footer-block table {
+    padding:0 280px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
